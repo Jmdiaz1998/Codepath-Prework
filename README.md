@@ -1,4 +1,4 @@
-## NAME_OF_YOUR_APP_HERE
+## Hello World
 
 ### App Description
 `TODO://` Add app description
@@ -11,9 +11,9 @@
 `TODO://` In the User stories section below, add an `x` between the `-[ ]` like this `- [x]` for any user story you complete. (☝️ Remove this paragraph after after checking off user stories)
 
 ### Required User Stories
-- [ ] 1. User sees custom text in a label - Hello from {name}!
-- [ ] 2. User see's custom background color.
-- [ ] 3. User can tap a button to change the text color of the label.
+- [x] 1. User sees custom text in a label - Hello from {name}!
+- [x] 2. User see's custom background color.
+- [x] 3. User can tap a button to change the text color of the label.
 
 ### Optional User Stories
 - [ ] 1. User can tap a button to change the color of the background view.  
