@@ -55,7 +55,8 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-        // Resets the view to default
+        // Resets the view to default:
+        /// Returns background color to royal purple
         findViewById<ConstraintLayout>(R.id.backgroundView).setOnClickListener {
             Log.i("Jorge", "Tapped background to reset view")
             findViewById<ConstraintLayout>(R.id.backgroundView).setBackgroundColor(
@@ -63,8 +64,11 @@ class MainActivity : AppCompatActivity() {
                     R.color.royal_purple
                 )
             )
+            /// Returns message to default
             messageTextView.setTextColor(resources.getColor(R.color.black))
             messageTextView.text = "Hello from Jorge!"
+
+            /// Hides custom text field
             findViewById<EditText>(R.id.custom_text_entry).visibility = View.GONE
             inputMethodManager.hideSoftInputFromWindow(editText.windowToken, 0)
         }
