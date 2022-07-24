@@ -26,21 +26,35 @@ class MainActivity : AppCompatActivity() {
             Log.i("Jorge", "Tapped on Change Text Button")
             // Get a reference to the text view
             // Set the color of the text view
-            findViewById<TextView>(R.id.textView).setTextColor(getResources().getColor(R.color.pearl_white))
+            findViewById<TextView>(R.id.textView).setTextColor(resources.getColor(R.color.pearl_white))
         }
 
         // Changes background color to white
         findViewById<Button>(R.id.change_background_color_button).setOnClickListener {
             Log.i("Jorge", "Tapped on Change Background Color button")
-            findViewById<ConstraintLayout>(R.id.backgroundView).setBackgroundColor(getResources().getColor(R.color.white))
+            findViewById<ConstraintLayout>(R.id.backgroundView).setBackgroundColor(
+                resources.getColor(
+                    R.color.white
+                )
+            )
+        }
+
+        // Change Text Messege to "Android is Awesome!"
+        findViewById<Button>(R.id.Change_Text_Button).setOnClickListener {
+            Log.i("Jorge", "Tapped on Change Text Button")
+            findViewById<TextView>(R.id.textView).text = "Android is Awesome!"
         }
 
         // Resets the view for both background and text color
         findViewById<ConstraintLayout>(R.id.backgroundView).setOnClickListener {
             Log.i("Jorge", "Tapped background to reset view")
-            findViewById<ConstraintLayout>(R.id.backgroundView).setBackgroundColor(getResources().getColor(R.color.royal_purple))
+            findViewById<ConstraintLayout>(R.id.backgroundView).setBackgroundColor(
+                getResources().getColor(
+                    R.color.royal_purple
+                )
+            )
             findViewById<TextView>(R.id.textView).setTextColor(getResources().getColor(R.color.black))
         }
-
     }
 }
+
