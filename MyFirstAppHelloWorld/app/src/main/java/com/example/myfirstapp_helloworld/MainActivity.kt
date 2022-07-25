@@ -3,6 +3,7 @@ package com.example.myfirstapp_helloworld
 import android.content.Context
 import android.os.Bundle
 import android.util.Log
+import android.view.KeyEvent
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.Button
@@ -84,16 +85,17 @@ class MainActivity : AppCompatActivity() {
             editText.requestFocus()
             inputMethodManager.showSoftInput(editText, InputMethodManager.SHOW_IMPLICIT)
 
-            //Gets text from custom text entry
-            val text = findViewById<EditText>(R.id.custom_text_entry) as EditText
-            val value = text.text.toString()
-
-            // Sets texts as main message
-            messageTextView.text = value
-
-
-            
         }
+            // sets key listener to enter button
+        editText.setOnKeyListener(View.OnKeyListener { _, keycode, event ->
+            if (event.action == KeyEvent.ACTION_DOWN && keycode == KeyEvent.KEYCODE_ENTER) {
+                messageTextView.text = editText.text
+                return@OnKeyListener true
+                // Returns custom text to messageTextView
+            }
+            false
+        })
+
     }
 }
 
