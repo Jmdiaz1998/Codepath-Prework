@@ -83,6 +83,15 @@ class MainActivity : AppCompatActivity() {
             // Assigns edit text to value and requests focus
             editText.requestFocus()
             inputMethodManager.showSoftInput(editText, InputMethodManager.SHOW_IMPLICIT)
+
+            //Gets text from custom text entry
+            val text = findViewById<EditText>(R.id.custom_text_entry) as EditText
+            val value = text.text.toString()
+
+            // Sets texts as main message
+            messageTextView.text = value
+
+
         }
     }
 }
