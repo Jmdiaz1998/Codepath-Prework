@@ -89,9 +89,12 @@ class MainActivity : AppCompatActivity() {
             // sets key listener to enter button
         editText.setOnKeyListener(View.OnKeyListener { _, keycode, event ->
             if (event.action == KeyEvent.ACTION_DOWN && keycode == KeyEvent.KEYCODE_ENTER) {
-                messageTextView.text = editText.text
-                return@OnKeyListener true
                 // Returns custom text to messageTextView
+                messageTextView.text = editText.text
+
+                // Hides custom text
+                findViewById<EditText>(R.id.custom_text_entry).visibility = View.GONE
+                return@OnKeyListener true
             }
             false
         })
