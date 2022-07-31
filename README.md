@@ -1,23 +1,19 @@
 ## Hello World
 
 ### App Description
-`TODO://` Add app description
+This app allows the user to view text and customize it alongside the view surrounding the text. 
 
 ### App Walk-though
-`TODO://` Add the URL to your animated app walk-though `gif` in the image tag below. Make sure the gif actually renders and animates when viewing this README. (☝️ Remove this paragraph after after adding gif)
 
-### Required User Stories
 <img src="http://g.recordit.co/t3PVOEVhef.gif" width=200><br>
 
-### Optional User Stories
 <img src="http://g.recordit.co/wvXz59F1Es.gif" width=200><br>
-
-`TODO://` In the User stories section below, add an `x` between the `-[ ]` like this `- [x]` for any user story you complete. (☝️ Remove this paragraph after after checking off user stories)
 
 ### Required User Stories
 - [x] 1. User sees custom text in a label - Hello from {name}!
 - [x] 2. User see's custom background color.
 - [x] 3. User can tap a button to change the text color of the label.
+
 
 ### Optional User Stories
 - [x] 1. User can tap a button to change the color of the background view.  -							
@@ -27,3 +23,4 @@
    - [x] a. User can enter text into a text field using the keyboard.  
    - [x] b. User can tap the "Change text string" button to update the label with the text from the text field.  
    - [x] c. If the text field is empty, update label with default text string.  
+
