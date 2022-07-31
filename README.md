@@ -7,7 +7,7 @@ This app allows the user to view text and customize it alongside the view surrou
 
 <img src="http://g.recordit.co/t3PVOEVhef.gif" width=200><br>
 
-<img src="http://g.recordit.co/wvXz59F1Es.gif" width=200><br>
+<img src="http://g.recordit.co/hypUTPyXVc.gif" width=200><br>
 
 ### Required User Stories
 - [x] 1. User sees custom text in a label - Hello from {name}!
