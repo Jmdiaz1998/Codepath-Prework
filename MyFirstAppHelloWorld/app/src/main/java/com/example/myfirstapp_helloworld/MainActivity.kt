@@ -97,7 +97,7 @@ class MainActivity : AppCompatActivity() {
 
                    // Default condition for empty text
                } else {
-                   messageTextView.text = "Hello from Jorge"
+                   messageTextView.text = "Hello from Jorge!"
                }
 
                 // Hides custom text
