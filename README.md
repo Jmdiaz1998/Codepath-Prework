@@ -1,4 +1,4 @@
-## Hello World
+## Custom Text and View - Hello World! 
 
 ### App Description
 This app allows the user to view text and customize it alongside the view surrounding the text. 
